@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NovaHoyaAI AI – Edge Computing</title>
+  <title>Nova AI - EdgeComputing</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <section class="ai-box">
-    <h2>🔥 NovaHoya AI</h2>
-    <p>Ask me anything about Edge Computing, Ultra Low Latency, Networks, AI, Security, Anything.</p>
+  <div class="ai-container">
+    <h1 class="title">🔥 NovaHoya AI</h1>
+    <p class="subtitle">Jarvis-Mode • Unlimited Local Intelligence • Ultra-Low Latency</p>
 
-    <div class="chat-window" id="chatWindow"></div>
+    <div class="chat-box" id="chatWindow"></div>
 
-    <div class="input-area">
-      <input id="userInput" type="text" placeholder="Ask something..." />
-      <button onclick="sendMessage()">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-          <path d="M2 21L23 12L2 3V10L16 12L2 14V21Z" fill="white"/>
+    <div class="input-panel">
+      <input id="userInput" type="text" placeholder="Type your command..." />
+      <button id="sendBtn">
+        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
+          <path d="M2 21L23 12L2 3V10L16 12L2 14V21Z"/>
         </svg>
       </button>
     </div>
-  </section>
+  </div>
 
 <script src="ai.js"></script>
 </body>
