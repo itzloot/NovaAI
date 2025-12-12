@@ -5,13 +5,13 @@ const userInput = document.getElementById("userInput");
 let model;
 
 async function loadModel() {
-  appendMessage("🔥 Loading Nova AI (Local Mode)...", "ai");
+  appendMessage("🔥 Loading Nova AI...", "ai");
 
   model = await webllm.createWebLLM({
     model: "Phi-3-mini-4k-instruct-q4f32_1-MLC",
   });
 
-  appendMessage("✅ Nova AI Ready (Offline Mode)", "ai");
+  appendMessage("✅ Nova AI Ready", "ai");
 }
 
 loadModel();
