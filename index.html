@@ -2,29 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nova AI - EdgeComputing</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova AI - Local LLaMA 3</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- WebLLM for Local LLaMA -->
+  <script src="https://cdn.jsdelivr.net/npm/@mlc-ai/web-llm/dist/index.min.js"></script>
 </head>
-
 <body>
+  <header class="hero">
+    <div class="logo">
+      <svg class="fire-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C10 5 7 7 7 11c0 4 3 7 5 9 2-2 5-5 5-9 0-4-3-6-5-9z" />
+      </svg>
+      <h1>Nova AI (LLaMA 3 Local)</h1>
+    </div>
+    <p class="subtitle">Fully Local • No API Key • Ultra-Low Latency</p>
+  </header>
 
-  <div class="ai-container">
-    <h1 class="title">🔥 NovaHoya AI</h1>
-    <p class="subtitle">Jarvis-Mode • Unlimited Local Intelligence • Ultra-Low Latency</p>
+  <main class="chat-wrapper">
+    <div id="chatBox" class="chat-box"></div>
 
-    <div class="chat-box" id="chatWindow"></div>
-
-    <div class="input-panel">
-      <input id="userInput" type="text" placeholder="Type your command..." />
+    <div class="input-area">
+      <input id="userInput" type="text" placeholder="Ask Nova…" />
       <button id="sendBtn">
-        <svg width="24" height="24" fill="white" viewBox="0 0 24 24">
-          <path d="M2 21L23 12L2 3V10L16 12L2 14V21Z"/>
+        <svg class="send-icon" viewBox="0 0 24 24">
+          <path d="M2 21l21-9L2 3v7l15 2-15 2z" />
         </svg>
       </button>
     </div>
-  </div>
+  </main>
 
-<script src="ai.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
