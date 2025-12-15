@@ -1,38 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nova AI - Edge Computing</title>
-  <link rel="stylesheet" href="style.css" />
-
-  <!-- WebLLM for Local LLaMA -->
-  <script src="https://cdn.jsdelivr.net/npm/@mlc-ai/web-llm/dist/index.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaHoyaAI</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <header class="hero">
-    <div class="logo">
-      <svg class="fire-icon" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 2C10 5 7 7 7 11c0 4 3 7 5 9 2-2 5-5 5-9 0-4-3-6-5-9z" />
-      </svg>
-      <h1>Nova AI (LLaMA 3 Local)</h1>
-    </div>
-    <p class="subtitle">Fully Local • No API Key • Ultra-Low Latency</p>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="logo">NovaHoya<span>AI</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#pipeline">Pipelines</a>
+      <a href="#contactdev">Dev</a>
+      <a href="#footer">Contact</a>
+    </nav>
   </header>
 
-  <main class="chat-wrapper">
-    <div id="chatBox" class="chat-box"></div>
-
-    <div class="input-area">
-      <input id="userInput" type="text" placeholder="Ask Nova…" />
-      <button id="sendBtn">
-        <svg class="send-icon" viewBox="0 0 24 24">
-          <path d="M2 21l21-9L2 3v7l15 2-15 2z" />
-        </svg>
-      </button>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="title">Ultra-Low-Latency Edge AI Engine</h1>
+      <p class="subtitle">Built for next-gen mobile & IoT devices. Local processing. Zero cloud. Pure speed.</p>
+      <a href="#" class="btn">Download SDK</a>
     </div>
-  </main>
+    <div class="hero-bg"></div>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <h2 class="section-title">What is NovaHoyaAI?</h2>
+    <p class="section-subtitle">
+      NovaHoyaAI is an advanced edge-computing intelligence engine designed for
+      real-time inference, modular JSON pipelines, on-device deep learning
+      execution, and ultra-secure local data processing.
+    </p>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="features section">
+    <h2 class="section-title">Core Features</h2>
+
+    <div class="grid">
+      <div class="card">
+        <i class="fa-solid fa-bolt"></i>
+        <h3>Ultra Low Latency</h3>
+        <p>Runs inference locally with micro-second response time.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-robot"></i>
+        <h3>Modular AI Pipelines</h3>
+        <p>Supports customizable JSON-based AI task pipelines.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Local Data Privacy</h3>
+        <p>Nothing sent to cloud. All processing happens on-device.</p>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-mobile-screen"></i>
+        <h3>Edge-Optimized</h3>
+        <p>Built for low-power mobile and IoT systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section id="pipeline" class="pipelines section">
+    <h2 class="section-title">Pipeline Architecture</h2>
+
+    <div class="pipeline-box">
+      <pre>
+{
+  "pipeline": {
+    "capture": "sensor",
+    "preprocess": "normalize",
+    "model": "edge-transformer-v3",
+    "postprocess": "classify"
+  }
+}
+      </pre>
+    </div>
+  </section>
+
+  <!-- CONTACT DEV -->
+  <section id="contactdev" class="contactdev section">
+    <h2 class="section-title">Contact Developer</h2>
+    <p class="section-subtitle">
+      Need support, collaboration, or reporting issues?  
+      Contact the Developer directly on Discord.
+    </p>
+
+    <a href="https://discord.com/users/1433020695561896006" class="contact-btn" target="_blank">
+      <i class="fa-brands fa-discord"></i> Contact Dev
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <h3>NovaHoyaAI © 2025</h3>
+    <p>Repo by itzloot</p>
+  </footer>
+
 </body>
 </html>
